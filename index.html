@@ -7,7 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 
     <title>Site exemplo</title>
   </head>
@@ -22,15 +25,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#ultimos-lancamentos">Últimos Lançamentos</a>
+              <a class="nav-link" href="#ultimosLancamentos">Últimos Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proximoCinema">Próximo nos cinemas</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                 Conteúdo
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Filmes</a>
-                <a class="dropdown-item" href="#">Séries</a>
+                <a class="dropdown-item" href="#filmes">Filmes</a>
+                <a class="dropdown-item" href="#series">Séries</a>
                 <a class="dropdown-item" href="#">Animações</a>
                 <a class="dropdown-item" href="#">Infantil</a>
               </div>
@@ -88,48 +94,95 @@
       <!--Jumbotron-->
       <div class="jumbotron jumbotron-fluid bg-light">
         <div class="container">
-          <h1 class="display-4">O melhor você encontra aqui!</h1>
+          <h1 class="display-4">O melhor do cinema você encontra aqui!</h1>
           <p class="lead">Filmes, Séries, Animações, Animes e conteúdo Infantil.</p>
           <p class="lead">Aproveite!! :)</p>
         </div>
       </div>
       <!--Jumbotron-->
-      
-      <div class="container-fluid bg-dark">
-        <h2 class="container text-white" id="ultimos-lancamentos">Últimos Lançamentos</h2>
-        <!--Cards-->
-        <div class="container d-flex justify-content-center flex-md-wrap">
-          <div class="card-deck">
-            <div class="card">
-              <img src="./assets/img/wanda-vision.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><a href="" class="text-decoration-none">Wanda Vision</a></h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./assets/img/loki.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><a href="" class="text-decoration-none">Loki</a></h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./assets/img/falcao-soldado.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><a href="" class="text-decoration-none">Falcão e o Soldado Inverval</a></h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
+
+      <div class="row ml-0 mr-0 mt-2 mb-2 d-flex flex-column pt-0">
+        <h2 class="text-white align-self-md-start p-4 mb-4" id="ultimosLancamentos">Últimos Lançamentos</h2>
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <img src="./assets/img/wanda-vision.jpg" alt="">
           </div>
-          <!--Cards-->
+          <div class="item">
+            <img src="./assets/img/falcao-soldado.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/loki.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/eternos.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/encanto.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/chernobyl.jpg" alt="">
+          </div>
+  
         </div>
       </div>
-    
+
+      <div class="row m-0 d-flex flex-column pt-0">
+        <h2 class="text-white align-self-md-start p-4 mb-4" id="filmes">Filmes</h2>
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <img src="./assets/img/batman.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/godfather.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/shang-chi.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/venon.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/eternos.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/encanto.jpg" alt="">
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="row m-0 d-flex flex-column pt-0">
+        <h2 class="text-white align-self-md-start p-4 mb-4" id="series">Séries</h2>
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <img src="./assets/img/arcane.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/falcao-soldado.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/round6.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/roda-tempo.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/loki.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/wanda-vision.jpg" alt="">
+          </div>
+  
+        </div>
+      </div>
+
      <!--Text and video-->
+     <div class="container d-flex justify-content-center pt-5 pb-2">
+      <h2 class="text-white" id="proximoCinema">Próximo nos Cinemas</h2>
+     </div> 
      <div class="container bg-light ">
         <div class="row mt-5 mb-5">
             <div class="col-md-6 p-3 d-flex flex-column justify-content-center">
@@ -188,7 +241,31 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
     <script src="./assets/js/script.js"></script>
+   
+   <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+          0:{
+            items:1
+          },
+          500:{
+            items:2
+          },
+          800:{
+          items: 3
+          },
+          1100:{
+            items:4
+        }
+    }
+})
+    </script>
 
   </body>
 </html>

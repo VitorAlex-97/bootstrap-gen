@@ -6,10 +6,19 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .border {
     border: 1px solid rebeccapurple;
+}
+
+.iframen-min {
+    min-height: 330px;
+}
+
+.item img {
+    min-height: 450px;
+    max-height: 450px;
 }
 
 footer {
@@ -30,8 +39,4 @@ footer a {
 
 footer a:hover {
     color: rgb(147, 98, 196);
-}
-
-.iframen-min {
-    min-height: 330px;
 }
